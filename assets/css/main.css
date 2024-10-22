@@ -1,0 +1,49 @@
+* {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B0B15;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.logo-header {
+    display: flex;
+}
+
+.logo-header img {
+    width: 230px;
+    height: auto;
+}
+
+.button-login-geral {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-login button {
+    width: 100px;
+    height: 40px;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.button-login button a {
+    outline: none;
+    text-decoration: none;
+
+    font-family: ;
+}
