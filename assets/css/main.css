@@ -1,22 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.albert-sans {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
 * {
-    width: 100%;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    color: white;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
     background-color: #0B0B15;
 }
 
 header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    padding: 15px;
+    padding: 10px 100px 10px 100px;
+
+    background-color: #0b0b15e0;
 }
 
 .logo-header {
@@ -28,9 +47,11 @@ header {
     height: auto;
 }
 
-.button-login-geral {
+nav {
     display: flex;
     flex-direction: row;
+
+    justify-content: space-between;
 }
 
 .button-login button {
@@ -41,9 +62,217 @@ header {
     border: 1px solid transparent;
 }
 
-.button-login button a {
+.button-login a button {
     outline: none;
     text-decoration: none;
 
-    font-family: ;
+    font-family: Albert Sans;
+    font-weight: 400;
+    color: white;
+
+    cursor: pointer;
+}
+
+.button-login a button:hover {
+    text-decoration: underline;
+}
+
+.button-cadastro a button {
+    outline: none;
+    text-decoration: none;
+
+    font-family: Albert Sans;
+    font-weight: 400;
+    color: white;
+
+    width: 100px;
+    height: 40px;
+
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: ease 0.2s;
+}
+
+.button-cadastro a button:hover {
+    border: 1px solid transparent;
+    background-color: #9000ff;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    height: 960px;
+}
+
+.infos-critic-geral {
+    display: flex;
+    flex-direction: row;
+
+    background-image: url('/assets/img/fundo.png');
+    background-size: cover;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titlle-critic h1 {
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+
+    width: 550px;
+    margin-bottom: 20px;
+}
+
+.titlle-critic p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+.cadastro-app p {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+
+    width: 500px;
+    margin-bottom: 5px;
+}
+
+.cadastro-app a button {
+    text-decoration: none;
+    outline: none;
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+    width: 230px;
+    height: 45px;
+
+    background-color: #9000ff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: ease 0.2s;
+}
+
+.cadastro-app a button:hover {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.div-prototipo img {
+    width: 550px;
+    height: auto;
+}
+
+.porque h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 35px;
+
+    margin-top: 40px;
+    margin-left: 170px;
+}
+
+.porque-geral {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #0B0B15;
+}
+
+.porque-desc {
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: end;
+
+    margin-top: 50px;
+}
+
+.porque-desc img {
+    width: 120px;
+}
+
+.feedbacks img {
+    margin-bottom: 10px;
+}
+
+.porque-desc h3 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+
+    margin-top: 10px;
+}
+
+.porque-desc p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 15px;
+
+    width: 300px;
+
+    margin-top: 10px;
+}
+
+.funcionalidade-geral {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.funcionalidade {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    
+}
+
+.funcionalidade-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-aside img {
+    width: 600px;
+    height: auto;
+}
+
+.funcionalidade-desc h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.funcionalidade-desc p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 25px;
+
+    width: 670px;
+
+    margin-top: 15px;
 }
