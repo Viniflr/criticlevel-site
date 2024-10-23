@@ -19,6 +19,10 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -28,14 +32,34 @@ body {
     background-color: #0B0B15;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;           /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #0b0b15;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #9000ff;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #0b0b15;  /* creates padding around scroll thumb */
+}
+
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 100px 10px 100px;
+    justify-content: space-between; /* Mantém o espaço entre logo e navegação */
+    padding: 10px 0px;
+    background-color: #0b0b15;
 
-    background-color: #0b0b15e0;
+    /* Mantém o header fixo no topo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo-header {
@@ -45,55 +69,30 @@ header {
 .logo-header img {
     width: 230px;
     height: auto;
+
+    margin-left: 50px;
 }
 
-nav {
+.nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
-    justify-content: space-between;
-}
-
-.button-login button {
-    width: 100px;
-    height: 40px;
-
-    background-color: transparent;
-    border: 1px solid transparent;
-}
-
-.button-login a button {
-    outline: none;
-    text-decoration: none;
-
-    font-family: Albert Sans;
-    font-weight: 400;
-    color: white;
-
-    cursor: pointer;
-}
-
-.button-login a button:hover {
-    text-decoration: underline;
+    margin-right: 50px;
 }
 
 .button-cadastro a button {
     outline: none;
     text-decoration: none;
-
     font-family: Albert Sans;
     font-weight: 400;
     color: white;
-
     width: 100px;
     height: 40px;
-
     background-color: transparent;
     border: 1px solid white;
     border-radius: 5px;
-
     cursor: pointer;
-
     transition: ease 0.2s;
 }
 
@@ -118,7 +117,7 @@ section {
     background-image: url('/assets/img/fundo-roxo.jpg');
     background-size: cover;
 
-    height: 850px;
+    height: 910px;
 
     align-items: center;
     justify-content: space-around;
@@ -183,6 +182,21 @@ section {
 .div-prototipo img {
     width: 550px;
     height: auto;
+
+    transform: translatey(0px);
+    animation: float-icons 4s ease-in-out infinite;
+}
+
+@keyframes float-prototipo {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-5px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
 
 .porque h2 {
@@ -216,6 +230,20 @@ section {
 
 .porque-desc img {
     width: 120px;
+    transform: translatey(0px);
+    animation: float-icons 3s ease-in-out infinite;
+}
+
+@keyframes float-icons {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
 
 .feedbacks img {
@@ -388,7 +416,7 @@ footer {
 
     font-family: Poppins;
 
-    padding: 100px 150px 20px 150px;
+    padding: 100px 270px 20px 270px;
 }
 
 .footer {
@@ -419,13 +447,14 @@ footer {
     display: flex;
     flex-direction: row;
 
-    gap: 200px;
+    gap: 100px;
 }
 
 .infos-footer h5 {
     font-weight: 300;
     font-size: 18px;
-    margin-bottom: 15px;
+
+    margin-bottom: 8px;
 }
 
 .infos-footer p {
