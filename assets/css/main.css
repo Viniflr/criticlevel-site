@@ -367,6 +367,7 @@ header {
     height: auto;
 
     gap: 70px;
+
     border: 2px solid #9000ff;
     border-radius: 60px;
     padding: 50px;
@@ -401,6 +402,8 @@ header {
 .biblioteca-geral {
     display: flex;
     align-self: start;
+
+    margin-top: 80px;
 }
 
 .biblioteca h2 {
