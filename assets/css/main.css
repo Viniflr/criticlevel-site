@@ -111,9 +111,10 @@ header {
     background-size: cover;
 
     height: 910px;
+    gap: 300px;
 
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .titlle-critic h1 {
@@ -354,23 +355,28 @@ header {
 
     align-items: center;
     justify-content: center;
+
+    margin-top: 40px;
 }
 
 .gif-avaliacao {
     display: flex;
     flex-direction: row;
+    position: relative;
+
     align-items: center;
     justify-content: space-evenly;
 
-    margin-top: 100px;
+    background-color: #0B0B15;
     width: auto;
     height: auto;
 
-    gap: 70px;
+    gap: 80px;
 
-    border: 2px solid #9000ff;
+    border: 2px solid #9000FF;
     border-radius: 60px;
-    padding: 50px;
+
+    padding: 60px;
 }
 
 .gif-avaliacao img {
@@ -401,15 +407,94 @@ header {
 
 .biblioteca-geral {
     display: flex;
+    flex-direction: column;
     align-self: start;
 
     margin-top: 80px;
+
+    font-family: Poppins;
+}
+
+.biblioteca-geral2 {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 50px;
 }
 
 .biblioteca h2 {
     font-family: Poppins;
     font-weight: 500;
     font-size: 35px;
+}
+
+.biblioteca p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 30px;
+
+    margin-top: 20px;
+
+    width: 750px;
+}
+
+
+.biblioteca-gradiente-geral {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+
+    align-items: center;
+    justify-items: center;
+
+    margin-top: 100px;
+}
+
+.biblioteca-gradiente {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#number {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 120px;
+    
+    background: linear-gradient(to bottom, #9000FF, #5EC3FF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    background-size: 100% 200%; 
+    animation: gradienteAnimacao 3s alternate infinite; 
+}
+
+@keyframes gradienteAnimacao {
+    0% {
+        background-position: 100% 0%; 
+    }
+    100% {
+        background-position: 100% 100%; 
+    }
+}
+
+#jogos {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    align-self: flex-end;
+
+    font-size: 35px;
+    margin-top: -30px;
 }
 
 /* ----------- */
