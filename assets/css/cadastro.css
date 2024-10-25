@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.albert-sans {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    background-color: #0B0B15;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;           /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #0b0b15;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #9000ff;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #0b0b15;  /* creates padding around scroll thumb */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Mantém o espaço entre logo e navegação */
+    padding: 10px 0px;
+    background-color: #0b0b15;
+
+    /* Mantém o header fixo no topo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-header {
+    display: flex;
+}
+
+.logo-header img {
+    width: 230px;
+    height: auto;
+
+    margin-left: 50px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 50px;
+}
+
+.button-entrar a button {
+    outline: none;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 400;
+    color: white;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.button-entrar a button:hover {
+    border: 1px solid transparent;
+    background-color: #9000ff;
+}
+
+/*----Main----*/
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+.caixa{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 998;
+
+    background-color: #0B0B15;
+    width:65%;
+    height: auto;
+
+    gap: 80px;
+
+    border: 2px solid #9000FF;
+    border-radius: 60px;
+
+}
+
+.caixa img {
+    display: flex;
+    z-index: 999;
+
+    width: 630px;
+    height: 100%;
+}
+
+/*----Esquerda----*/
+
+#text-maior{
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#text-menor{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/*----Direita----*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    font-family: Poppins;
+    gap: 80px;
+}
+
+#titulo{
+    font-size: 50px;
+    
+}
+
+
+.alinhamento{
+    display: flex;
+    flex-direction: column;
+    gap: 15px ;
+
+}
+
+.acordo{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+
+.acordo p{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+
+.text-field{
+    background-color: #0B0B15 ;
+    border-radius: 5px;
+    padding: 15px;
+    border: solid thin #fff;
+    opacity: 75%;
+
+}
+
+#buttom {
+    text-decoration: none;
+    outline: none;
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+    width: 230px;
+    height: 45px;
+
+    background-color: #9000ff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: ease 0.2s;
+}
+
+#buttom:hover {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+
+/*----Footer----*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #0F0F19;
+
+    font-family: Poppins;
+
+    padding: 100px 270px 20px 270px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer img {
+    width: 130px;
+    height: auto;
+}
+
+.logo-footer p {
+    font-weight: 300;
+    font-size: 15px;
+    width: 250px;
+}
+
+.infos-footer {
+    display: flex;
+    flex-direction: row;
+
+    gap: 100px;
+}
+
+.infos-footer h5 {
+    font-weight: 300;
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.infos-footer p {
+    font-weight: 300;
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.infos-footer a {
+    text-decoration: none;
+}
+
+.infos-footer a:hover {
+    text-decoration: underline;
+}
+
+.quero-infos-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.quero-infos h5 {
+    font-weight: 600;
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+.quero-infos a button {
+    text-decoration: none;
+    outline: none;
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+    width: 230px;
+    height: 45px;
+
+    background-color: #9000ff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+
+    cursor: pointer;
+
+    transition: ease 0.2s;
+}
+
+.quero-infos a button:hover {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#divisor {
+    border-bottom: 1px solid #787878;
+
+    margin-top: 70px;
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.social-icons a i {
+    margin-left: 10px;
+
+    cursor: pointer;
+}
+
+.fiveup-footer {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.fiveup-footer img {
+    width: 139px;
+    height: auto;
+
+    margin-right: 20px;
+}
+
+.copyright p {
+    font-weight: 200;
+    font-size: 15px;
+    color: white;
+}
