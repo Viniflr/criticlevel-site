@@ -84,14 +84,14 @@ header {
 .button-cadastro a button {
     outline: none;
     text-decoration: none;
-    font-family: Albert Sans;
+    font-family: Poppins;
     font-weight: 400;
     color: white;
-    width: 100px;
+    width: 150px;
     height: 40px;
     background-color: transparent;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
     transition: ease 0.2s;
 }
@@ -368,7 +368,7 @@ header {
     justify-content: space-evenly;
 
     background-color: #0B0B15;
-    width: auto;
+    width: 100%;
     height: auto;
 
     gap: 80px;
@@ -380,7 +380,7 @@ header {
 }
 
 .gif-avaliacao img {
-    width: 550px;
+    width: 600px;
     height: auto;
 }
 
@@ -400,7 +400,6 @@ header {
     margin-top: 15px;
     font-size: 24px;
     font-weight: 300;
-    width: 450px;
 }
 
 /* ----------- */
@@ -443,15 +442,17 @@ header {
 
 
 .biblioteca-gradiente-geral {
+    background-image: url('/assets/img/jogos.png');
+    background-size: cover;
+
     display: flex;
     flex-direction: column;
 
-    width: auto;
+    width: 100%;
+    height: 1700px;
 
     align-items: center;
     justify-items: center;
-
-    margin-top: 100px;
 }
 
 .biblioteca-gradiente {
@@ -462,13 +463,15 @@ header {
 
     align-items: center;
     justify-items: center;
+
+    margin-top: 200px;
 }
 
 #number {
     display: flex;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 120px;
+    font-size: 150px;
     
     background: linear-gradient(to bottom, #9000FF, #5EC3FF);
     background-clip: text;
@@ -489,11 +492,11 @@ header {
 
 #jogos {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 
-    align-self: flex-end;
+    align-self: center;
 
-    font-size: 35px;
+    font-size: 45px;
     margin-top: -30px;
 }
 
