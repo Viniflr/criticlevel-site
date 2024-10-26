@@ -371,6 +371,8 @@ header {
     width: 100%;
     height: auto;
 
+    margin-bottom: 80px;
+
     gap: 80px;
 
     border: 2px solid #9000FF;
@@ -408,8 +410,6 @@ header {
     display: flex;
     flex-direction: column;
     align-self: start;
-
-    margin-top: 80px;
 
     font-family: Poppins;
 }
@@ -498,6 +498,56 @@ header {
 
     font-size: 45px;
     margin-top: -30px;
+}
+
+.caixa-icons-jogos {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+}
+
+.caixa-icons {
+    display: flex;
+    flex-direction: column;
+    background-color: #5011815d;
+    border: 1px solid #CF4CFF;
+    border-radius: 30px;
+
+    width: 284px;
+    height: 284px;
+
+    gap: 30px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-icons img {
+    width: 150px;
+    height: auto;
+}
+
+#tlo {
+    width: 130px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+.caixa-icons p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.biblioteca-gradiente-geral h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 75px;
 }
 
 /* ----------- */
