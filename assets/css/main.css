@@ -48,18 +48,35 @@ body::-webkit-scrollbar-thumb {
 
 header {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Mantém o espaço entre logo e navegação */
-    padding: 10px 0px;
+    justify-content: space-between;
+    padding: 10px 50px; /* Ajuste de padding */
     background-color: #0b0b15;
-
-    /* Mantém o header fixo no topo */
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     z-index: 1000;
+}
+
+.botao-volta {
+    display: flex;
+    position: fixed;
+
+    margin-top: 30px;
+    margin-left: 30px;
+
+    animation: float-volta 1s ease-in-out infinite;
+}
+
+@keyframes float-volta {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-5px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
 }
 
 .logo-header {
@@ -75,30 +92,25 @@ header {
 
 .nav {
     display: flex;
-    flex-direction: row;
     align-items: center;
-
-    margin-right: 50px;
 }
 
-.button-cadastro a button {
-    outline: none;
-    text-decoration: none;
+.links-page ul {
+    display: flex;
+    list-style: none;
     font-family: Poppins;
-    font-weight: 400;
-    color: white;
-    width: 150px;
-    height: 40px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: ease 0.2s;
+    font-weight: 300;
+    font-size: 18px;
+    gap: 60px;
 }
 
-.button-cadastro a button:hover {
-    border: 1px solid transparent;
-    background-color: #9000ff;
+.links-page li a {
+    text-decoration: none;
+    transition: text-decoration 0.2s; /* Transição suave para hover */
+}
+
+.links-page li a:hover {
+    text-decoration: underline;
 }
 
 /* ----------- */
@@ -107,7 +119,7 @@ header {
     display: flex;
     flex-direction: row;
 
-    background-image: url('/assets/img/fundo-roxo.jpg');
+    background-image: url('/assets/img/fundo-roxo.gif');
     background-size: cover;
 
     height: 910px;
@@ -371,7 +383,7 @@ header {
     width: 100%;
     height: auto;
 
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 
     gap: 80px;
 
@@ -409,7 +421,6 @@ header {
 .biblioteca-geral {
     display: flex;
     flex-direction: column;
-    align-self: start;
 
     font-family: Poppins;
 }
@@ -418,10 +429,12 @@ header {
     display: flex;
     flex-direction: row;
 
+    gap: 130px;
+
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 50px;
+    margin-top: -200px;
 }
 
 .biblioteca h2 {
@@ -452,7 +465,9 @@ header {
     height: 1700px;
 
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+
+    gap: 150px;
 }
 
 .biblioteca-gradiente {
@@ -463,8 +478,6 @@ header {
 
     align-items: center;
     justify-items: center;
-
-    margin-top: 200px;
 }
 
 #number {
@@ -513,12 +526,12 @@ header {
 .caixa-icons {
     display: flex;
     flex-direction: column;
-    background-color: #5011815d;
+    background-color: #5011818f;
     border: 1px solid #CF4CFF;
     border-radius: 30px;
 
-    width: 284px;
-    height: 284px;
+    width: 350px;
+    height: 300px;
 
     gap: 30px;
 
@@ -533,13 +546,11 @@ header {
 
 #tlo {
     width: 130px;
-    margin-bottom: -10px;
-    margin-top: 10px;
 }
 
 .caixa-icons p {
     font-family: Poppins;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     text-align: center;
 }
@@ -547,7 +558,9 @@ header {
 .biblioteca-gradiente-geral h1 {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 75px;
+    font-size: 95px;
+
+    text-shadow:#A5EFFF 0 0 50px;
 }
 
 /* ----------- */
