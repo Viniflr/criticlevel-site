@@ -300,11 +300,6 @@ header {
     flex-direction: column;
 }
 
-.imagem-aside img {
-    width: 600px;
-    height: auto;
-}
-
 .funcionalidade-desc h2 {
     font-family: Poppins;
     font-weight: 500;
@@ -382,7 +377,7 @@ header {
     position: relative;
 
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     background-color: #0B0B15;
     width: 100%;
@@ -390,7 +385,7 @@ header {
 
     gap: 80px;
 
-    border: 2px solid #9000FF;
+    border: 2px solid #9000FF; 
     border-radius: 60px;
 
     padding: 50px;
@@ -570,11 +565,6 @@ header {
 
 .caixa-icons img {
     width: 150px;
-    height: auto;
-}
-
-#tlo {
-    width: 130px;
 }
 
 .caixa-icons p {
