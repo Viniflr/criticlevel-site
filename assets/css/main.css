@@ -144,7 +144,7 @@ header {
     display: flex;
     flex-direction: row;
 
-    background-image: url('/assets/img/fundo-roxo.gif');
+    background-image: url('../img/fundo-roxo.gif');
     background-size: cover;
 
     height: 910px;
@@ -482,7 +482,7 @@ header {
 }
 
 .biblioteca-gradiente-geral {
-    background-image: url('/assets/img/jogos.png');
+    background-image: url('../img/jogos.png');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -626,7 +626,7 @@ header {
     display: flex;
     flex-direction: column;
 
-    background-image: url(/assets/img/fundo-linha.png);
+    background-image: url(../img/fundo-linha.png);
     background-size: cover;
     background-repeat: no-repeat;
 
