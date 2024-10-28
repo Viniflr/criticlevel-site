@@ -46,6 +46,20 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #0b0b15;  /* creates padding around scroll thumb */
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -626,6 +640,18 @@ header {
     margin-bottom: 150px;
 }
 
+.socios-linha1 :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.socios-linha1 :nth-child(3) {
+    transition-delay: 700ms;
+}
+
+.socios-linha1 :nth-child(4) {
+    transition-delay: 1000ms;
+}
+
 .socios-linha1 {
     display: flex;
     flex-direction: row;
@@ -636,7 +662,7 @@ header {
     gap: 100px;
 }
 
-.socios-caixa {
+#socios-caixa {
     display: flex;
     flex-direction: column;
     width: 191px;
