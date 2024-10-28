@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
     <header>
@@ -33,13 +33,14 @@
             <div class="infos-critic-geral">
                 <div class="infos-critic">
                     <div class="titlle-critic">
+                        <h2>Em breve...</h2>
                         <h1>CriticLevel - Da crítica ao topo: onde os indies ganham destaque.</h1>
                         <p>Um App para conectar desenvolvedores e gamers no Brasil</p>
                     </div>
             
                     <div class="cadastro-app">
                         <p>Se interessou?</p>
-                        <a href="https://vincius-fernandes-f69c.herospark.co/p/criticlevel-cadastro"><button>Entre em contato!</button></a>
+                        <a href="#formulario"><button>Entre em contato!</button></a>
                     </div>
                 </div>
     
@@ -233,7 +234,7 @@
     
                             <div id="socios-caixa" class="hidden-socios">
                                 <div class="socios-pessoa">
-                                    <img src="./assets/img/foto-sem.png" alt="#">
+                                    <img src="./assets/img/iago.png" alt="#">
                                 </div>
     
                                 <div class="nome">
@@ -241,13 +242,13 @@
                                 </div>
     
                                 <div class="cargo">
-                                    <p>CIO</p>
+                                    <p>CHRO</p>
                                 </div>
                             </div>
     
                             <div id="socios-caixa" class="hidden-socios">
                                 <div class="socios-pessoa">
-                                    <img src="./assets/img/foto-sem.png" alt="#">
+                                    <img src="./assets/img/pedrom.png" alt="#">
                                 </div>
     
                                 <div class="nome">
@@ -285,13 +286,13 @@
                                 </div>
     
                                 <div class="cargo">
-                                    <p>SM</p>
+                                    <p>PMP</p>
                                 </div>
                             </div>
     
                             <div id="socios-caixa" class="hidden-socios">
                                 <div class="socios-pessoa">
-                                    <img src="./assets/img/foto-sem.png" alt="#">
+                                    <img src="./assets/img/lare.png" alt="#">
                                 </div>
     
                                 <div class="nome">
@@ -319,6 +320,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="formulario-div">
+            <div id="formulario" class="hidden">
+                <div class="formulario-titulo">
+                    <h1>Fale</h1>
+                    <p id="forms-brilho">CONOSCO</p>
+                </div>
+
+                <form method = "post" action="form.php">
+                    <input type="text" name="nome" id=""placeholder="Nome completo:" required>
+                    <input type="email" name="email" id="" placeholder="Email:" required>
+                    <input type="tel" name="celular" id="" placeholder="Celular: (xx) xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                    <textarea name="texto" id="" placeholder="Sua mensagem:"></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
             </div>
         </section>
     </main>
@@ -351,7 +369,7 @@
             <div class="quero-infos-footer">
                 <div class="quero-infos">
                     <h5>Para entrar em contato:</h5>
-                    <a href="https://vincius-fernandes-f69c.herospark.co/p/criticlevel-cadastro"><button>Clique aqui!</button></a>
+                    <a href="#formulario"><button>Clique aqui!</button></a>
                     <div id="email">
                         <i class="fa-solid fa-envelope"></i>
                         <p>criticlevelstartup@gmail.com</p>
@@ -367,6 +385,7 @@
                 <a href="https://x.com/CriticLevel" target="_blank"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
                 <a href="https://www.instagram.com/criticlevel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
                 <a href="https://www.linkedin.com/company/criticlevel" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                <a href="https://www.youtube.com/@criticlevel" target="_blank"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
             </div>
 
             <div class="fiveup-footer">

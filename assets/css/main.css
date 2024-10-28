@@ -154,6 +154,13 @@ header {
     justify-content: center;
 }
 
+.titlle-critic h2 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    color: #D9D9D9;
+}
+
 .titlle-critic h1 {
     font-family: Poppins;
     font-size: 45px;
@@ -885,4 +892,113 @@ footer {
 
     align-items: center;
     gap: 5px;
+}
+
+/* ----------- */
+
+.formulario-div {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-titulo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-titulo h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#forms-brilho {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 40px;
+    color: #9000FF;
+    text-shadow:#9000FF 0 0 7px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+}
+
+form input, form textarea {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+
+    font-family: Poppins;
+    transition: all 0.2s;
+}
+
+form input:hover {
+    border: 1px solid #9000ff;
+}
+
+textarea {
+    margin-top: 20px;
+    height: 100px;
+    resize: none;
+}
+
+textarea:hover {
+    border: 1px solid #9000ff;
+}
+
+form .btn-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+form .btn-enviar input {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+    width: 200px;
+
+    background-color: #9000ff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: ease 0.2s;
+
+    margin-bottom: 80px;
+}
+
+form .btn-enviar input:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: white 0 0 10px;
 }
