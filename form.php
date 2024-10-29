@@ -1,4 +1,14 @@
 <?php
+require_once("assets/src/PHPMailer.php");
+require_once("assets/src/SMTP.php");
+require_once("assets/src/Exception.php");
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+$mail = new PHPMailer(true);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Coleta os dados do formulário
     $nome = $_POST['nome'];
