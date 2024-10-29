@@ -1,43 +1,41 @@
 <?php
-require_once("assets/src/PHPMailer.php");
-require_once("assets/src/SMTP.php");
-require_once("assets/src/Exception.php");
+// Inclui o autoload do Composer
+require 'vendor/autoload.php';
 
+// Usa a classe PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-$mail = new PHPMailer(true);
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Coleta os dados do formulário
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $celular = $_POST['celular'];
     $mensagem = $_POST['texto'];
 
-    // Endereço de email para onde a mensagem será enviada
-    $destinatario = "criticlevelstartup@gmail.com";
-    
-    // Assunto do email
-    $assunto = "Nova mensagem do formulário de contato";
+    $mail = new PHPMailer(true);
+    try {
+        // Configurações do servidor SMTP do Gmail
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'criticlevelstartup@gmail.com'; // Seu email Gmail
+        $mail->Password = 'SUA_SENHA_DE_APP'; // Senha de App do Gmail
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
-    // Corpo do email
-    $corpo = "Nome: $nome\n";
-    $corpo .= "Email: $email\n";
-    $corpo .= "Celular: $celular\n";
-    $corpo .= "Mensagem:\n$mensagem";
+        // Recipiente
+        $mail->setFrom($email, $nome);
+        $mail->addAddress('criticlevelstartup@gmail.com');
 
-    // Cabeçalhos para o envio do email
-    $headers = "From: $email" . "\r\n" .
-               "Reply-To: $email" . "\r\n" .
-               "X-Mailer: PHP/" . phpversion();
+        // Conteúdo do email
+        $mail->isHTML(false);
+        $mail->Subject = 'Nova mensagem do formulário de contato';
+        $mail->Body = "Nome: $nome\nEmail: $email\nCelular: $celular\nMensagem:\n$mensagem";
 
-    // Envia o email
-    if (mail($destinatario, $assunto, $corpo, $headers)) {
+        $mail->send();
         echo "Mensagem enviada com sucesso!";
-    } else {
-        echo "Erro ao enviar mensagem. Tente novamente.";
+    } catch (Exception $e) {
+        echo "Erro ao enviar mensagem. Erro: {$mail->ErrorInfo}";
     }
 }
 ?>
