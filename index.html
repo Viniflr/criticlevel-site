@@ -329,13 +329,13 @@
                     <p id="forms-brilho">CONOSCO</p>
                 </div>
 
-                <form method="post" action="form.php">
+                <form action="processa_formulario.php" method="POST"> 
                     <input type="text" name="nome" id="nome" placeholder="Nome completo:" required>
                     <input type="email" name="email" id="email" placeholder="Email:" required>
                     <input type="tel" name="celular" id="celular" placeholder="Celular: (xx) xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
                     <textarea name="texto" id="texto" placeholder="Sua mensagem:"></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                </form>
+                </form>                              
             </div>
         </section>
     </main>
