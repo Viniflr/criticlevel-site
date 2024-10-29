@@ -1,22 +1,33 @@
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Coleta os dados do formulário
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $celular = $_POST['celular'];
+    $mensagem = $_POST['texto'];
 
-    $nome = addslashes($_POST["nome"]);
-    $email = addslashes($_POST["email"]);
-    $celular = addslashes($_POST["celular"]);
-    $texto = addslashes($_POST["texto"]);
+    // Endereço de email para onde a mensagem será enviada
+    $destinatario = "criticlevelstartup@gmail.com";
+    
+    // Assunto do email
+    $assunto = "Nova mensagem do formulário de contato";
 
-    $para = "criticlevelstartup@gmail.com";
-    $assunto = "Coleta de dados - CriticLevel";
+    // Corpo do email
+    $corpo = "Nome: $nome\n";
+    $corpo .= "Email: $email\n";
+    $corpo .= "Celular: $celular\n";
+    $corpo .= "Mensagem:\n$mensagem";
 
-    $corpo = $assunto."Nome:".$nome."email:".$email."celular:".$celular."<br>"."Mensagem enviada:".$texto;
+    // Cabeçalhos para o envio do email
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "X-Mailer: PHP/" . phpversion();
 
-    $cabeca = "From: critclevelstartup@gmail.com"."<br>"."Reply-to: ".$email."<br>"."X=Mailer:PHP/".phpversion();
-
-    if(mail($para,$assunto,$corpo,$cabeca)){
-        echo("Email enviado com sucesso!");
+    // Envia o email
+    if (mail($destinatario, $assunto, $corpo, $headers)) {
+        echo "Mensagem enviada com sucesso!";
+    } else {
+        echo "Erro ao enviar mensagem. Tente novamente.";
     }
-    else{
-        echo("Houve um erro ao enviar o email!");
-    }
-
+}
 ?>
