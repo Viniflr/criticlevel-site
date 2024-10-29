@@ -6,11 +6,11 @@
     $texto = addslashes($_POST["texto"]);
 
     $para = "criticlevelstartup@gmail.com";
-    $assunto = "Rec'n Play - ";
+    $assunto = "Coleta de dados - CriticLevel";
 
-    $corpo = $assunto."Nome:".$nome."<br>"."email:".$email."<br>"."celular:".$celular."<br>"."Mensagem enviada: <br>".$texto;
+    $corpo = $assunto."Nome:".$nome."email:".$email."celular:".$celular."<br>"."Mensagem enviada:".$texto;
 
-    $cabeca = "From: critclevelstartup@gmail.com"."<br>"."Reply-to: ".$email."<br>"."X=Mailer:PHP/". phpversion();
+    $cabeca = "From: critclevelstartup@gmail.com"."<br>"."Reply-to: ".$email."<br>"."X=Mailer:PHP/".phpversion();
 
     if(mail($para,$assunto,$corpo,$cabeca)){
         echo("Email enviado com sucesso!");
