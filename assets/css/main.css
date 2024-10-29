@@ -587,20 +587,12 @@ header {
     height: 300px;
 
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-#c1 {
-    width: 170px;
-}
-
-#c2 {
-    width: 210px;
-}
-
-#c3 {
-    width: 280px;
-    margin-top: 8px;
+.caixa-icons p {
+    font-family: Poppins;
+    font-size: 25px;
 }
 
 .biblioteca-gradiente-geral h1 {
@@ -925,7 +917,6 @@ footer {
     font-weight: 700;
     font-size: 40px;
     color: #9000FF;
-    text-shadow:#9000FF 0 0 7px;
 }
 
 #formulario {
