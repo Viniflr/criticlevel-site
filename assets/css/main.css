@@ -994,3 +994,83 @@ textarea:hover {
     border: 1px solid white;
     box-shadow: white 0 0 10px;
 }
+
+@media screen and (max-width: 1430px) {
+    header {
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-header img {
+        width: 200px;
+        height: auto;
+        margin: 0;
+    }
+
+    .links-page {
+        display: none;
+    }
+
+    .infos-critic-geral {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-prototipo img {
+        display: none;
+    }
+
+    .infos-critic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .infos-critic-geral { 
+        height: 500px;
+    }
+
+    .titlle-critic h2 {
+        margin-top: 300px;
+        font-size: 20px;
+    }
+    
+    .titlle-critic h1 {
+        font-size: 25px;
+        width: 300px;
+    }
+    
+    .titlle-critic p {
+        font-size: 20px;
+        width: 300px;
+    }
+    
+    .cadastro-app p {
+        font-size: 15px;
+        width: 300px;
+    }
+    
+    .cadastro-app a button {
+        text-decoration: none;
+        outline: none;
+    
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+    
+        width: 230px;
+        height: 45px;
+    
+        background-color: #9000ff;
+        border: 1px solid transparent;
+        border-radius: 5px;
+    
+        cursor: pointer;
+    
+        transition: ease 0.2s;
+    }
+}
