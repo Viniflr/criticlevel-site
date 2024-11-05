@@ -134,6 +134,7 @@ header {
     background-image: url('../img/fundo-roxo.gif');
     background-size: cover;
 
+    width: 100%;
     height: 910px;
 
     align-items: center;
@@ -964,7 +965,7 @@ textarea:hover {
 
 /* ------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) { } @media screen and (max-width: 480px) { } @media screen and (max-width: 600px) { } @media screen and (max-width: 768px) { } @media screen and (max-width: 992px) {
     .funcionalidade-geral-div {
         margin: 0px;
     }
@@ -1001,12 +1002,18 @@ textarea:hover {
 
     /* Margens para críticas */
     .infos-critic {
+        width: 100%;
         margin: 20px 0px 20px 10px;
     }
 
     /* Títulos e parágrafos de críticas */
+    .titlle-critic {
+        width: 400px;
+    }
+
     .titlle-critic h2 {
         font-size: 25px; /* Ajuste de tamanho */
+        width: 200px;
     }
 
     .titlle-critic h1 {
@@ -1022,6 +1029,7 @@ textarea:hover {
     /* Estilo do cadastro do aplicativo */
     .cadastro-app p {
         font-size: 18px;
+        width: 100%;
     }
 
     .cadastro-app a button {
@@ -1040,12 +1048,13 @@ textarea:hover {
     }
 
     .porque-desc {
-        gap: 100px;
+        width: 90%;
+        gap: 50px;
         margin-top: 40px;
     }
 
     .porque-desc img {
-        width: 80px;
+        width: 60px;
     }
 
     .porque-desc h3 {
@@ -1139,7 +1148,7 @@ textarea:hover {
     }
     
     .gif-avaliacao img {
-        width: 350px;
+        width: 100%;
     }
     
     .funcionalidade3 {
@@ -1271,12 +1280,13 @@ textarea:hover {
 
     .caixa-icons-jogos {
         gap: 10px;
-        width: auto;
+        width: 400px;
+        justify-content: center;
     }
 
     .caixa-icons {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 
     .caixa-icons img {
@@ -1328,7 +1338,7 @@ textarea:hover {
     }
 
     .logo-footer p {
-        width: 270px;
+        width: 100%;
     }
 
     .infos-footer {
