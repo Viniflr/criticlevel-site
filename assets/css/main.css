@@ -995,82 +995,131 @@ textarea:hover {
     box-shadow: white 0 0 10px;
 }
 
-@media screen and (max-width: 1430px) {
+/* ------- */
+
+@media screen and (max-width: 768px) {
+    .botao-volta {
+        display: none;
+    }
+
     header {
-        padding: 10px;
-        align-items: center;
+        display: flex;
         justify-content: center;
+        padding: 10px;
     }
 
     .logo-header img {
-        width: 200px;
+        width: 150px; /* Reduzi um pouco o tamanho da logo */
         height: auto;
         margin: 0;
     }
 
-    .links-page {
+    nav {
         display: none;
     }
 
     .infos-critic-geral {
         display: flex;
-        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        background-size: cover;
+
+        height: auto;
+    }
+
+    .infos-critic {
+        margin: 10px 0 20px 0;
+    }
+
+    .titlle-critic h2 {
+        font-size: 14px; /* Ajuste de tamanho para melhor adaptação */
+    }
+
+    .titlle-critic h1 {
+        font-size: 20px;
+        max-width: 90vw; /* Ajuste de largura para se adaptar melhor */
+    }
+
+    .titlle-critic p {
+        font-size: 14px;
+        max-width: 80vw; /* Usa viewport width para melhor adaptação */
+    }
+
+    .cadastro-app p {
+        font-size: 14px;
+    }
+
+    .cadastro-app a button {
+        font-size: 18px;
+        padding: 8px 16px; /* Melhora a proporção do botão */
+    }
+
+    .cadastro-app a button:hover {
+        border: 1px solid white;
+        background-color: transparent;
     }
 
     .div-prototipo img {
         display: none;
     }
 
-    .infos-critic {
+    .porque-geral {
+        margin: 0px;
+    }
+
+    .porque h2 {
+        font-size: 28px; /* Reduzi o tamanho do título para caber melhor */
+    }
+
+    .porque-desc {
+        display: none;
+    }
+
+    .funcionalidade-geral {
+        margin: 0;
+    }
+
+    .funcionalidade {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .funcionalidade2 {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
     }
 
-    .infos-critic-geral { 
-        height: 500px;
+    .funcionalidade-desc h2 {
+        font-size: 20px;
+        text-align: center;
     }
 
-    .titlle-critic h2 {
-        margin-top: 300px;
+    .funcionalidade-desc p {
+        font-size: 16px;
+        max-width: 75vw; /* Melhor adaptação a telas menores */
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .imagem-aside img {
+        width: 220px; /* Ligeira redução */
+    }
+
+    .imagem-aside2 img {
+        margin-top: 20px;
+        width: 180px; /* Ligeira redução */
+        padding: 0;
+    }
+
+    .funcionalidade-desc2 h2 {
         font-size: 20px;
+        text-align: center;
     }
-    
-    .titlle-critic h1 {
-        font-size: 25px;
-        width: 300px;
-    }
-    
-    .titlle-critic p {
-        font-size: 20px;
-        width: 300px;
-    }
-    
-    .cadastro-app p {
-        font-size: 15px;
-        width: 300px;
-    }
-    
-    .cadastro-app a button {
-        text-decoration: none;
-        outline: none;
-    
-        font-family: Poppins;
-        font-size: 20px;
-        font-weight: 700;
-        color: white;
-    
-        width: 230px;
-        height: 45px;
-    
-        background-color: #9000ff;
-        border: 1px solid transparent;
-        border-radius: 5px;
-    
-        cursor: pointer;
-    
-        transition: ease 0.2s;
+
+    .funcionalidade-desc2 p {
+        font-size: 16px;
+        max-width: 75vw; /* Melhor adaptação a telas menores */
+        margin-top: 5px;
+        text-align: center;
     }
 }
