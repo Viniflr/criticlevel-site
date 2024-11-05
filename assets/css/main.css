@@ -1023,7 +1023,7 @@ textarea:hover {
 
     .titlle-critic p {
         font-size: 20px;
-        max-width: 80vw; /* Uso de viewport width */
+        width: 100%;
     }
 
     /* Estilo do cadastro do aplicativo */
