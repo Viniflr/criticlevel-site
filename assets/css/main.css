@@ -1203,21 +1203,21 @@ textarea:hover {
     }
 
     .caixa-icons-jogos {
-        gap: 20px;
+        gap: 10px;
     }
 
     .caixa-icons {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 20px;
     }
 
     .caixa-icons img {
-        width: 50px;
+        width: 70px;
     }
 
     .caixa-icons p {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .biblioteca-gradiente-geral h1 {
