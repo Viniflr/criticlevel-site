@@ -964,7 +964,7 @@ textarea:hover {
 
 /* ------- */
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 768px) {
     .funcionalidade-geral-div {
         margin: 0px;
     }
@@ -1128,7 +1128,7 @@ textarea:hover {
         display: flex;
         flex-direction: column;
 
-        width: 90%;
+        width: 85%;
         padding: 20px;
         gap: 20px;
     }
