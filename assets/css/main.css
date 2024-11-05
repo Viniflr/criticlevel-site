@@ -966,39 +966,35 @@ textarea:hover {
 /* ------- */
 
 @media screen and (max-width: 320px) { } @media screen and (max-width: 480px) { } @media screen and (max-width: 600px) { } @media screen and (max-width: 768px) { } @media screen and (max-width: 992px) {
-    .funcionalidade-geral-div {
-        margin: 0px;
-    }
-    
-    /* Esconder o botão de voltar */
     .botao-volta {
         display: none;
     }
 
     /* Estilização do cabeçalho */
     header {
-        display: flex;
         justify-content: center;
         padding: 10px;
     }
 
+
     .logo-header img {
-        width: 250px; /* Redução do tamanho da logo */
-        height: auto;
+        width: 200px; /* Redução do tamanho da logo */
         margin: 0;
     }
+
 
     /* Navegação escondida */
     nav {
         display: none;
     }
-
-    /* Estilo das informações gerais */
-    .infos-critic-geral {
+    
+     /* Estilo das informações gerais */
+     .infos-critic-geral {
         background-size: cover;
         height: auto;
         margin-bottom: 40px;
     }
+
 
     /* Margens para críticas */
     .infos-critic {
@@ -1006,74 +1002,51 @@ textarea:hover {
         margin: 20px 0px 20px 10px;
     }
 
+    .div-prototipo {
+        display: none;
+    }
+
+
     /* Títulos e parágrafos de críticas */
     .titlle-critic {
-        width: 400px;
+        width: 100%;
     }
+
 
     .titlle-critic h2 {
-        font-size: 25px; /* Ajuste de tamanho */
-        width: 200px;
+        font-size: 20px; /* Ajuste de tamanho */
+        width: 100%;
     }
+
 
     .titlle-critic h1 {
-        font-size: 30px;
-        width: 400px;
+        font-size: 24px;
+        width: 95%;
     }
+
 
     .titlle-critic p {
-        font-size: 20px;
-        width: 100%;
+        font-size: 15px;
+        width: 80%;
     }
 
-    /* Estilo do cadastro do aplicativo */
     .cadastro-app p {
-        font-size: 18px;
         width: 100%;
-    }
-
-    .cadastro-app a button {
-        font-size: 20px;
-    }
-
-    /* Esconder imagem do protótipo */
-    .div-prototipo img {
-        display: none;
     }
 
     /* Estilo das seções "porque" */
     .porque-geral {
-        margin-top: 0;
-        text-align: center;
-    }
-
-    .porque-desc {
-        width: 90%;
-        gap: 50px;
-        margin-top: 40px;
-    }
-
-    .porque-desc img {
-        width: 60px;
-    }
-
-    .porque-desc h3 {
         display: none;
-    }
-
-    .porque-desc p {
-        display: none;
-    }
-
-    .porque h2 {
-        margin-top: 0px;
-        font-size: 24px;
-        text-align: center;
     }
 
     /* Funcionalidades gerais */
-    .funcionalidade-geral {
+    .funcionalidade-geral-div {
         margin: 0;
+    }
+
+    .funcionalidade-desc,
+    .funcionalidade-desc2 {
+        align-items: center;
     }
 
     .funcionalidade {
@@ -1093,143 +1066,121 @@ textarea:hover {
         margin-left: 0;
         font-size: 24px;
         text-align: center; /* Centraliza o texto */
+        width: 100%;
     }
 
     .funcionalidade-desc p,
     .funcionalidade-desc2 p {
         font-size: 20px;
-
-        margin: 10px 40px 10px 40px;
+        width: 90%;
         text-align: justify; /* Centraliza o texto */
     }
 
     /* Imagens das seções laterais */
     .imagem-aside img {
-        width: 300px; 
+        width: 300px;
     }
 
     .imagem-aside2 img {
         margin-top: 30px;
         margin-left: 0;
         width: 220px; /* Ligeira redução */
-        
+       
     }
-
-    /* --------- */
 
     .gifs-geral {
         display: flex;
         flex-direction: column;
-    
         margin-top: 100px;
     }
-    
+   
     .gif-avaliacao-geral {
         display: flex;
-    
         align-items: center;
         justify-content: center;
-
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
-    
+   
     .gif-avaliacao {
         display: flex;
         flex-direction: column;
-
-        width: 85%;
+        width: 90%;
         padding: 20px;
         gap: 20px;
     }
+
 
     #gif-avaliacao2 {
         display: flex;
         flex-direction: column-reverse;
     }
-    
+   
     .gif-avaliacao img {
         width: 100%;
     }
-    
+
     .funcionalidade3 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 0px;
     }
-    
+   
     .funcionalidade3 h2 {
         font-size: 24px;
-        font-weight: 500;
-    
         margin-top: 0px;
     }
-    
+   
     .funcionalidade3 p {
         margin-top: 10px;
         font-size: 20px;
-        font-weight: 300;
     }
 
     .imagem-aside3 img {
         width: 300px;
     }
-    
+   
     .gif-conteudo {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    
+   
     .gif-conteudo h2 {
         font-size: 24px;
     }
-    
+   
     .gif-conteudo p {
         margin-top: 15px;
         font-size: 20px;
         text-align: justify;
     }
 
-    /* ----------- */
-
-    .biblioteca-geral {
+    .biblioteca-geral2 {
         display: flex;
         flex-direction: column;
-
         margin-top: 0px;
     }
 
     .biblioteca-gradiente-geral {
-        background-image: url('../img/jogos.png');
         background-size: cover;
-
-        display: flex;
         flex-direction: column;
-
-        width: 100%;
-        height: 1400px;
-
-        margin-top: -600px;
-
         align-items: center;
         justify-content: center;
-
-        gap: 150px;
+        gap: 100px;
     }
 
-    .biblioteca-geral2 {
+    .biblioteca {
         display: flex;
         flex-direction: column;
-
-        gap: 70px;
-
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .biblioteca-geral2 img {
-        width: 350px;
+        width: 80%;
+        margin-top: -60px;
+        margin-bottom: -400px;
     }
 
     .biblioteca h2 {
@@ -1239,165 +1190,39 @@ textarea:hover {
 
     .biblioteca p {
         font-size: 20px;
-        margin: 10px 40px 10px 40px;
-
-        width: auto;
+        width: 90%;
         text-align: justify;
-    }
-
-    .biblioteca-gradiente {
-        display: flex;
-        flex-direction: column;
-
-        width: auto;
-        margin-top: 400px;
-
-        align-items: center;
-        justify-items: center;
     }
 
     #number {
         font-size: 100px;
-        
-        background: linear-gradient(to bottom, #9000FF, #5EC3FF);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-        background-size: 100% 200%; 
-        animation: gradienteAnimacao 3s alternate infinite; 
     }
 
     #jogos {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-
-        align-self: center;
-
         font-size: 24px;
-        margin-top: -30px;
-        margin-bottom: -90px;
     }
 
     .caixa-icons-jogos {
-        gap: 10px;
-        width: 400px;
-        justify-content: center;
-    }
-
-    .caixa-icons {
-        width: 120px;
-        height: 120px;
-    }
-
-    .caixa-icons img {
-        width: 80px;
-    }
-
-    .caixa-icons p {
-        font-size: 17px;
-    }
-
-    .biblioteca-gradiente-geral h1 {
-        font-size: 50px;
-        margin-top: -90px;
-
-        animation: brilho 1s alternate infinite;
-    }
-
-    /* ----------- */
-
-    footer {
-        display: flex;
-        flex-direction: column;
-    
-        padding: 10px;
-    }
-    
-    .footer {
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        justify-content: center;
-
-        margin-left: 10px;
-        gap: 30px;
-        margin: 0;
-    }
-
-    .logo-footer {
-        display: flex;
-        flex-direction: row;
-
-        align-items: center;
         gap: 20px;
     }
 
-    .logo-footer img {
-        width: 90px;
+    .caixa-icons {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
     }
 
-    .logo-footer p {
-        width: 100%;
+    .caixa-icons img {
+        width: 50px;
     }
 
-    .infos-footer {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
+    .caixa-icons p {
+        font-size: 11px;
     }
 
-    .quero-infos {
-        text-align: center;
-        margin-top: 40px;
+    .biblioteca-gradiente-geral h1 {
+        font-size: 45px;
     }
-
-    #divisor {
-        border-bottom: 1px solid #787878;
-        margin-top: 60px;
-    }
-    
-    .social-footer {
-        display: flex;
-        flex-direction: column;
-    
-        margin-top: 10px;
-    }
-    
-    .social-icons a i {
-        margin-bottom: 20px;
-    }
-    
-    .fiveup-footer {
-        display: flex;
-        flex-direction: column-reverse;
-    
-        align-items: center;
-    }
-    
-    .fiveup-footer img {
-        width: 140px;
-        height: auto;
-        margin-right: 0px;
-        margin-top: 40px;
-    }
-    
-    .copyright p {
-        font-weight: 200;
-        font-size: 15px;
-        color: white;
-    }
-    
-    #email {
-        display: flex;
-        flex-direction: row;
-    
-        align-items: center;
-        gap: 5px;
-    }
-    
-    /* ----------- */
 
     .socios-geral {
         display: none;
@@ -1406,22 +1231,16 @@ textarea:hover {
     .socios-geral-mobile {
         display: flex;
         flex-direction: column;
-
         margin-top: -100px;
-
         background-image: url(../img/fundo-linha.png);
         background-size: contain;
         background-repeat: no-repeat;
-
         align-items: center;
         justify-content: space-around;
     }
 
     .socios-titulo {
-        display: flex;
-        flex-direction: row;
         gap: 10px;
-        margin-bottom: 70px;
     }
 
     .socios-titulo h1 {
@@ -1429,11 +1248,7 @@ textarea:hover {
     }
 
     .socios {
-        display: flex;
-        flex-direction: column;
-
         gap: 50px;
-        margin-bottom: 100px;
     }
 
     .socios-linha1 {
@@ -1441,73 +1256,82 @@ textarea:hover {
     }
 
     #socios-caixa {
-        display: flex;
-        flex-direction: column;
         width: 170px;
         height: 260px;
-
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .socios-pessoa {
-        display: flex;
-        flex-direction: column;
-        
     }
 
     .socios-pessoa img {
         width: 150px;
-        height: auto;
     }
 
     .nome h2 {
-        font-family: Poppins;
-        font-weight: 600;
-        text-align: center;
         font-size: 20px;
-        line-height: 25px;
     }
 
-    .cargo {
-        display: flex;
-        border: 1px solid white;
-        border-radius: 60px;
-        width: 65px;
-        height: 30px;
-
-        align-items: center;
-        justify-content: center;
-
-        font-family: Poppins;
-        font-weight: 300;
-        font-size: 17px;
-    }
-
-    .cargo-l {
-        display: flex;
-        border: 1px solid white;
-        border-radius: 60px;
-        width: 100px;
-        height: 30px;
-
-        align-items: center;
-        justify-content: center;
-
-        font-family: Poppins;
-        font-weight: 300;
-        font-size: 17px;
-    }
-
-    /* ----------- */
-    
     #formulario {
-        display: flex;
-        flex-direction: column;
-    
-        align-items: center;
-        justify-content: center;
-    
         width: 90%;
     }
-}
+
+    footer {
+        padding: 10px;
+    }
+   
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .logo-footer {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-footer img {
+        width: 80px;
+    }
+
+    .logo-footer p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .infos-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quero-infos {
+        text-align: center;
+        margin-top: 40px;
+    }
+   
+    .social-footer {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+   
+    .social-icons a i {
+        margin-bottom: 20px;
+    }
+   
+    .fiveup-footer {
+        flex-direction: column-reverse;
+    }
+   
+    .fiveup-footer img {
+        width: 140px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+   
+    .copyright p {
+        margin-top: 20px;
+    }
+    
+    .btn-enviar button {
+        margin-bottom: 80px;
+    }
+}   
