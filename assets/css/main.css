@@ -1,35 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.albert-sans {
-    font-family: "Albert Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-.poppins {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
     color: white;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
-
     background-color: #0B0B15;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -81,6 +66,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .botao-volta {
@@ -90,10 +77,10 @@ header {
     margin-top: 30px;
     margin-left: 30px;
 
-    animation: float-volta 1s ease-in-out infinite;
+    animation: float 1s ease-in-out infinite;
 }
 
-@keyframes float-volta {
+@keyframes float {
     0% {
         transform: translatey(0px);
     }
@@ -148,10 +135,9 @@ header {
     background-size: cover;
 
     height: 910px;
-    gap: 300px;
 
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .titlle-critic h2 {
@@ -222,25 +208,7 @@ header {
     height: auto;
 
     transform: translatey(0px);
-    animation: float-icons 4s ease-in-out infinite;
-}
-
-@keyframes float-prototipo {
-    0% {
-        transform: translatey(0px);
-    }
-    50% {
-        transform: translatey(-5px);
-    }
-    100% {
-        transform: translatey(0px);
-    }
-}
-
-.porque h2 {
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 35px;
+    animation: float 4s ease-in-out infinite;
 }
 
 /* ----------- */
@@ -251,6 +219,15 @@ header {
 
     background-color: #0B0B15;
     margin-top: 100px;
+}
+
+.porque {
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.porque h2 {
+    font-size: 35px;
 }
 
 .porque-desc {
@@ -269,19 +246,7 @@ header {
 .porque-desc img {
     width: 120px;
     transform: translatey(0px);
-    animation: float-icons 3s ease-in-out infinite;
-}
-
-@keyframes float-icons {
-    0% {
-        transform: translatey(0px);
-    }
-    50% {
-        transform: translatey(-10px);
-    }
-    100% {
-        transform: translatey(0px);
-    }
+    animation: float 3s ease-in-out infinite;
 }
 
 .feedbacks img {
@@ -317,7 +282,7 @@ header {
 }
 
 .funcionalidade-geral-div {
-    width: 1400px;
+    margin: 0px 200px 0px 200px;
 }
 
 .funcionalidade {
@@ -343,8 +308,7 @@ header {
     font-family: Poppins;
     font-weight: 300;
     font-size: 30px;
-
-    width: 800px;
+    text-align: justify;
 
     margin-top: 15px;
 }
@@ -381,8 +345,7 @@ header {
     font-family: Poppins;
     font-weight: 300;
     font-size: 30px;
-
-    width: 800px;
+    text-align: justify;
 
     margin-top: 15px;
 }
@@ -613,6 +576,10 @@ header {
 }
 
 /* ----------- */
+
+.socios-geral-mobile {
+    display: none;
+}
 
 .socios-geral {
     display: flex;
@@ -997,11 +964,17 @@ textarea:hover {
 
 /* ------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1430px) {
+    .funcionalidade-geral-div {
+        margin: 0px;
+    }
+    
+    /* Esconder o botão de voltar */
     .botao-volta {
         display: none;
     }
 
+    /* Estilização do cabeçalho */
     header {
         display: flex;
         justify-content: center;
@@ -1009,117 +982,521 @@ textarea:hover {
     }
 
     .logo-header img {
-        width: 150px; /* Reduzi um pouco o tamanho da logo */
+        width: 250px; /* Redução do tamanho da logo */
         height: auto;
         margin: 0;
     }
 
+    /* Navegação escondida */
     nav {
         display: none;
     }
 
+    /* Estilo das informações gerais */
     .infos-critic-geral {
-        display: flex;
-        justify-content: flex-start;
-        padding: 20px;
         background-size: cover;
-
         height: auto;
+        margin-bottom: 40px;
     }
 
+    /* Margens para críticas */
     .infos-critic {
-        margin: 10px 0 20px 0;
+        margin: 20px 0px 20px 10px;
     }
 
+    /* Títulos e parágrafos de críticas */
     .titlle-critic h2 {
-        font-size: 14px; /* Ajuste de tamanho para melhor adaptação */
+        font-size: 25px; /* Ajuste de tamanho */
     }
 
     .titlle-critic h1 {
-        font-size: 20px;
-        max-width: 90vw; /* Ajuste de largura para se adaptar melhor */
+        font-size: 30px;
+        width: 400px;
     }
 
     .titlle-critic p {
-        font-size: 14px;
-        max-width: 80vw; /* Usa viewport width para melhor adaptação */
+        font-size: 20px;
+        max-width: 80vw; /* Uso de viewport width */
     }
 
+    /* Estilo do cadastro do aplicativo */
     .cadastro-app p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .cadastro-app a button {
-        font-size: 18px;
-        padding: 8px 16px; /* Melhora a proporção do botão */
+        font-size: 20px;
     }
 
-    .cadastro-app a button:hover {
-        border: 1px solid white;
-        background-color: transparent;
-    }
-
+    /* Esconder imagem do protótipo */
     .div-prototipo img {
         display: none;
     }
 
+    /* Estilo das seções "porque" */
     .porque-geral {
-        margin: 0px;
-    }
-
-    .porque h2 {
-        font-size: 28px; /* Reduzi o tamanho do título para caber melhor */
+        margin-top: 0;
+        text-align: center;
     }
 
     .porque-desc {
+        gap: 100px;
+        margin-top: 40px;
+    }
+
+    .porque-desc img {
+        width: 80px;
+    }
+
+    .porque-desc h3 {
         display: none;
     }
 
+    .porque-desc p {
+        display: none;
+    }
+
+    .porque h2 {
+        margin-top: 0px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Funcionalidades gerais */
     .funcionalidade-geral {
         margin: 0;
     }
 
     .funcionalidade {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* Inverte a ordem dos elementos */
     }
 
     .funcionalidade2 {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Coluna normal */
     }
 
-    .funcionalidade-desc h2 {
+    /* Descrições das funcionalidades */
+    .funcionalidade-desc h2,
+    .funcionalidade-desc2 h2 {
+        margin-top: 40px;
+        margin-left: 0;
+        font-size: 24px;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .funcionalidade-desc p,
+    .funcionalidade-desc2 p {
         font-size: 20px;
-        text-align: center;
+
+        margin: 10px 40px 10px 40px;
+        text-align: justify; /* Centraliza o texto */
     }
 
-    .funcionalidade-desc p {
-        font-size: 16px;
-        max-width: 75vw; /* Melhor adaptação a telas menores */
-        margin-top: 5px;
-        text-align: center;
-    }
-
+    /* Imagens das seções laterais */
     .imagem-aside img {
-        width: 220px; /* Ligeira redução */
+        width: 300px; 
     }
 
     .imagem-aside2 img {
-        margin-top: 20px;
-        width: 180px; /* Ligeira redução */
-        padding: 0;
+        margin-top: 30px;
+        margin-left: 0;
+        width: 220px; /* Ligeira redução */
+        
     }
 
-    .funcionalidade-desc2 h2 {
+    /* --------- */
+
+    .gifs-geral {
+        display: flex;
+        flex-direction: column;
+    
+        margin-top: 100px;
+    }
+    
+    .gif-avaliacao-geral {
+        display: flex;
+    
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 40px;
+    }
+    
+    .gif-avaliacao {
+        display: flex;
+        flex-direction: column;
+
+        width: 95%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #gif-avaliacao2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .gif-avaliacao img {
+        width: 350px;
+    }
+    
+    .funcionalidade3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    .funcionalidade3 h2 {
+        font-size: 24px;
+        font-weight: 500;
+    
+        margin-top: 0px;
+    }
+    
+    .funcionalidade3 p {
+        margin-top: 10px;
         font-size: 20px;
+        font-weight: 300;
+    }
+
+    .imagem-aside3 img {
+        width: 300px;
+    }
+    
+    .gif-conteudo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .gif-conteudo h2 {
+        font-size: 24px;
+    }
+    
+    .gif-conteudo p {
+        margin-top: 15px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    /* ----------- */
+
+    .biblioteca-geral {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .biblioteca-gradiente-geral {
+        background-image: url('../img/jogos.png');
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 1400px;
+
+        margin-top: -600px;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 150px;
+    }
+
+    .biblioteca-geral2 {
+        display: flex;
+        flex-direction: column;
+
+        gap: 70px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .biblioteca-geral2 img {
+        width: 350px;
+    }
+
+    .biblioteca h2 {
+        font-size: 24px;
         text-align: center;
     }
 
-    .funcionalidade-desc2 p {
-        font-size: 16px;
-        max-width: 75vw; /* Melhor adaptação a telas menores */
-        margin-top: 5px;
+    .biblioteca p {
+        font-size: 20px;
+        margin: 10px 40px 10px 40px;
+
+        width: auto;
+        text-align: justify;
+    }
+
+    .biblioteca-gradiente {
+        display: flex;
+        flex-direction: column;
+
+        width: auto;
+        margin-top: 400px;
+
+        align-items: center;
+        justify-items: center;
+    }
+
+    #number {
+        font-size: 100px;
+        
+        background: linear-gradient(to bottom, #9000FF, #5EC3FF);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        background-size: 100% 200%; 
+        animation: gradienteAnimacao 3s alternate infinite; 
+    }
+
+    #jogos {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+
+        align-self: center;
+
+        font-size: 24px;
+        margin-top: -30px;
+        margin-bottom: -90px;
+    }
+
+    .caixa-icons-jogos {
+        gap: 10px;
+    }
+
+    .caixa-icons {
+        width: 150px;
+        height: 150px;
+    }
+
+    .caixa-icons img {
+        width: 80px;
+    }
+
+    .caixa-icons p {
+        font-size: 17px;
+    }
+
+    .biblioteca-gradiente-geral h1 {
+        font-size: 50px;
+        margin-top: -90px;
+
+        animation: brilho 1s alternate infinite;
+    }
+
+    /* ----------- */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    
+        padding: 10px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 10px;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .logo-footer {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-footer img {
+        width: 90px;
+    }
+
+    .logo-footer p {
+        width: 270px;
+    }
+
+    .infos-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
         text-align: center;
+    }
+
+    .quero-infos {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #divisor {
+        border-bottom: 1px solid #787878;
+        margin-top: 60px;
+    }
+    
+    .social-footer {
+        display: flex;
+        flex-direction: column;
+    
+        margin-top: 10px;
+    }
+    
+    .social-icons a i {
+        margin-bottom: 20px;
+    }
+    
+    .fiveup-footer {
+        display: flex;
+        flex-direction: column-reverse;
+    
+        align-items: center;
+    }
+    
+    .fiveup-footer img {
+        width: 140px;
+        height: auto;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    
+    .copyright p {
+        font-weight: 200;
+        font-size: 15px;
+        color: white;
+    }
+    
+    #email {
+        display: flex;
+        flex-direction: row;
+    
+        align-items: center;
+        gap: 5px;
+    }
+    
+    /* ----------- */
+
+    .socios-geral {
+        display: none;
+    }
+
+    .socios-geral-mobile {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: -100px;
+
+        background-image: url(../img/fundo-linha.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .socios-titulo {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 70px;
+    }
+
+    .socios-titulo h1 {
+        font-size: 35px;
+    }
+
+    .socios {
+        display: flex;
+        flex-direction: column;
+
+        gap: 50px;
+        margin-bottom: 100px;
+    }
+
+    .socios-linha1 {
+        gap: 20px;
+    }
+
+    #socios-caixa {
+        display: flex;
+        flex-direction: column;
+        width: 170px;
+        height: 260px;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .socios-pessoa {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .socios-pessoa img {
+        width: 150px;
+        height: auto;
+    }
+
+    .nome h2 {
+        font-family: Poppins;
+        font-weight: 600;
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .cargo {
+        display: flex;
+        border: 1px solid white;
+        border-radius: 60px;
+        width: 65px;
+        height: 30px;
+
+        align-items: center;
+        justify-content: center;
+
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 17px;
+    }
+
+    .cargo-l {
+        display: flex;
+        border: 1px solid white;
+        border-radius: 60px;
+        width: 100px;
+        height: 30px;
+
+        align-items: center;
+        justify-content: center;
+
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 17px;
+    }
+
+    /* ----------- */
+    
+    #formulario {
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+        justify-content: center;
+    
+        width: 90%;
     }
 }
