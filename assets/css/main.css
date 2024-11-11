@@ -1056,6 +1056,26 @@ textarea:hover {
         display: none;
     }
 
+    .func-titulo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .func-titulo h1 {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    
+    .func-titulo span {
+        font-weight: 700;
+        color: #9000ff;
+    }
+
     /* Funcionalidades gerais */
     .funcionalidade-geral-div {
         margin: 0;
