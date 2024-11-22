@@ -1,0 +1,77 @@
+.titlle-critic2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titlle-critic2 span {
+    color: #9000ff;
+}
+
+.titlle-critic2 h1 {
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 700;
+    color: transparent;
+    background: -webkit-linear-gradient(#D8D8D8, #727272);
+    -webkit-background-clip: text;
+}
+
+.titlle-critic2 p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.porque-geral {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #0B0B15;
+}
+
+.porque-geral h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.porque-desc {
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+
+    gap: 250px;
+
+    margin-top: 50px;
+}
+
+.porque-desc img {
+    width: 120px;
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+.feedbacks img {
+    margin-bottom: 10px;
+}
+
+.porque-desc h3 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+
+    margin-top: 10px;
+}
+
+.porque-desc p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 15px;
+
+    width: 300px;
+
+    margin-top: 10px;
+}
